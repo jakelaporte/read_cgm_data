@@ -31,7 +31,7 @@ if 'header_row' not in st.session_state:
 if 'pages_dict' not in st.session_state:
     st.session_state['pages_dict'] = {pages_master[0][0]:pages_master[0][1],
                                     pages_master[1][0]:pages_master[1][1],
-                                    "Test":"pages/test_page.py",
+                                    #"Test":"pages/test_page.py",
                                     }
 if 'time_delta' not in st.session_state:
     st.session_state['time_delta'] = 5
