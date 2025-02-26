@@ -14,14 +14,18 @@ st.subheader("Instructions")
 body=''
 body+=":red[This application takes `.csv` files with CGM data "
 body+="as input and produces variability metrics for that data along "
-body+="with graphs to visualize the data.\n It is important that "
-body+="the data used has the same structure in terms of columns. The "
-body+="`Import Data` section of this tool will use the column number "
-body+="of the glucose and the date-time of your data "
-body+="selected below. Be sure to select these columns based on "
-body+="your data.]  \n\n"
-body+="#### Video: [Getting Started](https://youtu.be/S_QklfS5XCw)"
+body+="with graphs to visualize the data.\n This tool will assist the app user to "
+body+="set up the file structure so that all of the files can be loaded. It is important that "
+body+="the data used have the same structure in terms of the following:] \n"
+body+="1) header row (the row that the header row appears on should be consistent) \n"
+body+="2) rows to skip (the number of rows that needs to be skipped should be the same) \n"
+body+="3) time delta (the difference between observations should have the same time difference) \n"
+body+="4) unit of measure (chose between mg/dL or mmol/L) \n"
+body+="5) date-time column in the same relative order and glucose column in the same order."
+
 st.markdown(body)
+body="#### Video: [Data/File Structure](https://youtu.be/Bsf5e3RWe8Q)"
+st.sidebar.markdown(body)
 st.divider()
 skip_rows = st.session_state['skip_rows']
 current_file = st.session_state['current_file']
