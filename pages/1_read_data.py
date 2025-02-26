@@ -103,7 +103,7 @@ if current_file is not None:
         try:
             df[cols[0]] = pd.to_datetime(df[cols[0]],format=fmt_str)
         except:
-            st.sidebar.markdown("##### Video [Timestamp](https://youtu.be/7sbFFIxALvA)")
+            st.sidebar.markdown("#### Video: [date-time](https://youtu.be/7sbFFIxALvA)")
             fmt_str = st.sidebar.text_input("Date-Time Format:",
                                             value=fmt_str)
             st.sidebar.image('https://images.squarespace-cdn.com/content/v1/5be5c21e75f9ee21b5817cc2/e5a3ad17-463f-463a-98a0-7dfafcd5957b/fig02_datetime.png?format=1000w')
