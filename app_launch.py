@@ -45,6 +45,7 @@ if 'cohort_stats' not in st.session_state:
 
 pages_dict = st.session_state['pages_dict']
 rd.display_page_links(pages_dict)
+st.sidebar.markdown("#### Video: [Getting Started](https://youtu.be/rywPXWpToQQ)")
 
 st.markdown('# GVC-Calc')
 body = ""
