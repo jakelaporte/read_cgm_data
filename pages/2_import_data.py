@@ -49,8 +49,9 @@ if cgm_data is None:
         ok_btn = st.sidebar.button("OK",key="sb_ok_pg2_",on_click=rd.add_page_link,
                         args=(pages_master[3][0],pages_master[3][1]))
 else:
-    ok_btn = st.sidebar.button("OK",key="sb_ok_pg2",on_click=rd.add_page_link,
-                        args=(pages_master[3][0],pages_master[3][1]))
+    st.switch_page("pages/3_explore_data.py")
+    # ok_btn = st.sidebar.button("OK",key="sb_ok_pg2",on_click=rd.add_page_link,
+    #                     args=(pages_master[3][0],pages_master[3][1]))
     
         
         
