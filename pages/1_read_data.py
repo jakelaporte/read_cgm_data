@@ -115,7 +115,8 @@ if current_file is not None:
         st.session_state['date_format']=fmt_str
         st.session_state['time_delta'] = time_delta
         st.session_state['units']=units_
-        ok_btn = st.sidebar.button("OK",on_click=rd.add_page_link,
-                           args=(":file_cabinet: Import_Data","pages/2_import_data.py"))
+        ok_btn = st.sidebar.button(label=":information_source:**OK** ->:file_cabinet: Import",
+                                   on_click=rd.add_page_link,
+                                   args=(":file_cabinet: Import_Data","pages/2_import_data.py"))
     except:
         pass
