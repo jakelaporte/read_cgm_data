@@ -793,6 +793,8 @@ def auc_thresh(**kwargs):
                 total_hours+=dt
                 ## from paper, overly complicated is equivalent to above eqn
                 #ans2 += ((min(d1-thresh,d2-thresh)*dt)+abs(d2-d1)*(dt/2))
+        if total_hours == 0:
+            return 0
         return int(ans/(total_hours/(24)))
     else:
         for i in range(len(data)-1):
@@ -801,7 +803,9 @@ def auc_thresh(**kwargs):
             if d1<=thresh and d2<=thresh:
                 dt = (data.index[i+1]-data.index[i]).seconds/3600
                 ans += ((thresh-d1)+(thresh-d2))/2*dt
-                total_minutes+=dt
+                total_hours+=dt
+        if total_hours == 0:
+            return 0
         return int(ans/(total_hours/(24)))
 
 #### Needs updating ###############################################
