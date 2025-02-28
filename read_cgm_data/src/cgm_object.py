@@ -1132,7 +1132,8 @@ class CGM(object):
         days = days_df.index
         N = len(days)
         idx_day = days[0].weekday()
-        rows,calendar = num_rows(N,idx_day)       
+        rows,calendar = num_rows(N,idx_day)
+        rows = max(2,rows) 
         fig, axs = plt.subplots(nrows=rows,ncols=7,figsize=(7,rows),frameon=False)
         fig.subplots_adjust(wspace=0.02,hspace=0.05)
         for i in range(rows):
