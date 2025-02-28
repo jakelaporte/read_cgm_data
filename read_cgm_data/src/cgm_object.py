@@ -752,8 +752,11 @@ class CGM(object):
                     xy=(x_11-0.01*x_range,y6[90]),
                     weight="bold",color="blue")
         ax.annotate("(GRI)",xy=(x_11,y6[84]),weight="bold",color="blue")
+        colors=["green","darkgoldenrod","darkorange","tomato","firebrick"]
+        idx = int(stat[0]//20)
         ax.annotate(f'{stat[0]:0.2f}',xy=(x_11,y6[73]),
-                    weight='bold',fontsize=15)
+                    weight='bold',fontsize=15,color=colors[idx])
+        
         ax.annotate("[0-20]",xy=(x_12,y6[66]),fontsize=8,color="green")
         ax.annotate("[21-40]",xy=(x_12+0.04*x_range,y6[66]),
                     fontsize=8,color="darkgoldenrod")
