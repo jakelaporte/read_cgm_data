@@ -26,6 +26,10 @@ body+="5) date-time column in the same relative order and glucose column in the 
 st.markdown(body)
 body="#### Video: [Data/File Structure](https://youtu.be/Bsf5e3RWe8Q)"
 st.sidebar.markdown(body)
+restart=st.sidebar.button("Restart")
+if restart:
+    rd.initialize_session()
+    st.switch_page("app_launch.py")
 st.divider()
 skip_rows = st.session_state['skip_rows']
 current_file = st.session_state['current_file']
