@@ -63,9 +63,23 @@ if select == options[0]:
     body += "We focus on csv files and assisting the user with the ability to get load their "
     body += "file into the system assuming all of the files are structured the same."
     st.markdown(body)
+    st.subheader("Files")
+    body = "The files for this app should have data for a single participant spanning a single "
+    body+= "or multiple time periods. The app can accept multiple csv files representing many "
+    body+= "particpants as long as the files have the same structure in terms of the following:\n "
+    body+= "1) datetime format \n 2) datetime column number \n 3) glucose column number \n "
+    body+= "4) time delta between measurements (1 min, 5 mins, or 15 mins) \n "
+    body+= "5) unit of measurment of glucose level (mg/dL or mmol/L) \n "
+    body+= "6) location of the header row \n 7) number of rows to skip before getting to the data. \n\n "
+    body+= "Once the structure is understood, the user can import as many of those files as needed."
+    st.markdown(body)
+    img_link = "https://images.squarespace-cdn.com/content/v1/5be5c21e75f9ee21b5817cc2/"
+    img_link +="cc5acf74-63ab-40f0-83b0-e67c484abf2b/example_csv_cgm_file.png?format=1500w"
+    st.image(img_link,
+             width=700,
+             caption = "Figure 1: Example of CGM File.")
     st.subheader("Process")
-    body = "Structure of the csv file - 1) datetime format, 2) datetime column number, 3) glucose "
-    body += "column number, and 4) number of rows to skip before getting to the data. "
+    body = "Structure of the csv file - "
     body += "For files that have the same structure, see Figure 1, organize them into a folder and "
     body+= "use the `Data Format` tool to capture the structure of the csv files."
     st.markdown(body)
