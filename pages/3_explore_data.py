@@ -9,7 +9,8 @@ calc_units = st.session_state['calc_units']
 if len(cgm_data.names)>2:
     rd.add_page_link(pages_master[4][0],pages_master[4][1])
 rd.add_page_link(pages_master[5][0],pages_master[5][1])
-rd.add_page_link(pages_master[6][0],pages_master[6][1])
+#update transform self.series
+#rd.add_page_link(pages_master[6][0],pages_master[6][1])
     
 
 
