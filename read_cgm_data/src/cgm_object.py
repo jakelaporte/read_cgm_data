@@ -927,7 +927,7 @@ class CGM(object):
         ymin += [0.1]
         ymax = [top]
         
-        scols = ['iqr','gvp','modd_paper','bgi_paper_high','bgi_paper_low',
+        scols = ['iqr','gvp','modd_paper','bgi_paper_(hbgi)','bgi_paper_(lbgi)',
                  'grade_paper_overall','grade_paper_high','grade_paper_target',
                  'grade_paper_low','adrr_paper_overall', 
                  'adrr_paper_high','adrr_paper_low', 'gri_overall',
