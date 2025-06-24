@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy.stats import t,entropy
-#import streamlit as st
+import streamlit as st
 import collections
 
 from datetime import datetime,timedelta
@@ -926,6 +926,7 @@ class CGM(object):
         ymin = [bottom]*4
         ymin += [0.1]
         ymax = [top]
+
         
         scols = ['iqr','gvp','modd_paper','bgi_paper_(hbgi)','bgi_paper_(lbgi)',
                  'grade_paper_overall','grade_paper_high','grade_paper_target',
@@ -933,6 +934,7 @@ class CGM(object):
                  'adrr_paper_high','adrr_paper_low', 'gri_overall',
                  'gri_hyper','gri_hypo',
                 ]
+        st.write(self.stats.T)
         vals = self.stats.T[scols].values[0]
         i = 0 ####### First column #########################################
         rows = [0.85,0.65,0.45]
