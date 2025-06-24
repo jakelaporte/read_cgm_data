@@ -440,12 +440,12 @@ class CGM(object):
         
         self.stats_functions['bgi']={}
         self.stats_functions['bgi']['f']=low_high_blood_glucose_index
-        self.stats_functions['bgi']['description'] = 'LBGI_HGBI'
+        self.stats_functions['bgi']['description'] = 'LBGI_HBGI'
         self.stats_functions['bgi']['type'] = ['paper','easy']
         self.stats_functions['bgi']['time_agg'] = ['all','date','period','day']
         self.stats_functions['bgi']['normal'] = {'LBGI':[],
                                                  'HBGI':[]} 
-        self.stats_functions['bgi']['levels'] = ['low','high']
+        self.stats_functions['bgi']['levels'] = ['(lbgi)','(hbgi)']
 
         self.stats_functions['grade']={}
         self.stats_functions['grade']['f']=glycemic_risk_assessment_diabetes_equation
@@ -970,7 +970,7 @@ class CGM(object):
         
         i = 2 ####### Third column #########################################
         rows = [0.9, 0.8, 0.7, 0.6, 0.5]
-        ax.text(cols[i],rows[0],"HGBI",fontsize=font_size[0],
+        ax.text(cols[i],rows[0],"HBGI",fontsize=font_size[0],
                 weight=weight[0],ha = 'center', va = 'center',
                )
         ax.text(cols[i],rows[1],f"{vals[3]:0.2f}",fontsize=font_size[1],weight=weight[1],
@@ -978,7 +978,7 @@ class CGM(object):
                )
         ax.axhline(y=rows[2],xmin=cols[i]-4*padding,xmax=cols[i+1]-11*padding,color='gray')
         
-        ax.text(cols[i],rows[3],"LGBI",fontsize=font_size[0],
+        ax.text(cols[i],rows[3],"LBGI",fontsize=font_size[0],
                 weight=weight[0],ha = 'center', va = 'center',
                )
         ax.text(cols[i],rows[4],f"{vals[4]:0.2f}",fontsize=font_size[1],weight=weight[1],
