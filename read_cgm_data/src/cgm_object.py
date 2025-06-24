@@ -934,7 +934,6 @@ class CGM(object):
                  'adrr_paper_high','adrr_paper_low', 'gri_overall',
                  'gri_hyper','gri_hypo',
                 ]
-        st.write(self.stats.T)
         vals = self.stats.T[scols].values[0]
         i = 0 ####### First column #########################################
         rows = [0.85,0.65,0.45]
