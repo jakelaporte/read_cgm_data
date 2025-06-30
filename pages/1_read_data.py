@@ -117,8 +117,7 @@ if current_file is not None:
         glucose_col = glucose_col[0][0]
         cols = df.columns[[date_col,glucose_col]]
         df.iloc[:,date_col]=df.iloc[:,date_col].apply(lambda x: x.split(".")[0])
-        st.write(df)
-        st.write(fmt_str)
+        #st.write(df)
         try:
             df[cols[0]] = pd.to_datetime(df[cols[0]],format=fmt_str)
         except:
