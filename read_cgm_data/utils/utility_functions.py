@@ -27,7 +27,7 @@ def view_raw_data(iofile,skip_rows = 1,header_ = 0,stop_=None):
             break
     data = {}
     header = lst_data[header_]
-    st.write(header)
+    #st.write(header)
     #st.write(lst_data)
     for i in range(len(header)):
         data[header[i]]=[]
