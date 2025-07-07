@@ -8,7 +8,7 @@ pages_master = {0:[":house: Home","app_launch.py"],
               1:[":information_source: Data Structure","pages/1_read_data.py"],
               2:[":file_cabinet: Import_Data","pages/2_import_data.py"],
               3:[":man: Explore Data","pages/3_explore_data.py"],
-              4:[":woman-woman-boy-boy: Cohort Data","pages/4_compare_data.py"],
+              4:[":couple: Cohort Data","pages/4_compare_data.py"],
               5:[":floppy_disk: Export Data","pages/5_export_data.py"],
 }
 
