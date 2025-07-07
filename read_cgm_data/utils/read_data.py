@@ -197,8 +197,8 @@ def view_raw_data(iofile,skip_rows = 1,header_ = 0,stop_=None):
                 except:
                     try:
                         row[i]=row[i].replace('"','')
-                        if row[i] == '':
-                            row[i]=np.nan
+                        #if row[i] == '':
+                        #    row[i]=np.nan
                     except:
                         pass
 
