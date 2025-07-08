@@ -54,7 +54,7 @@ def read_data(filename,date_col=1,glucose_col=2,
     output is a dataframe with datetime index and 
         glucose (mg/dL) as values in a column
     """
-    c = 1*(units=='mg')+18.018*(units=='mmol')
+    c = 1*(units=='mg')+1*(units=='mmol')
     dtf = datetime_format_generator()
 
     try:
