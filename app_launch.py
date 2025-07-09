@@ -102,7 +102,7 @@ if select == options[1]:
     tabs = st.tabs(tab_options)
     with tabs[0]:
         
-        st.markdown("##### :medical_symbol: How should the data be displayed")
+        st.markdown("##### ⚕️ How should the data be displayed")
         
         link = "- [Continuous glucose monitoring and metrics for clinical trials: an international consensus statement]"
         link += "(https://www.thelancet.com/journals/landia/article/PIIS2213-8587(22)00319-9/abstract)"
