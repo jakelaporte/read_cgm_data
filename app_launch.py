@@ -259,7 +259,7 @@ if select == options[1]:
         st.markdown(link)
 
     with tabs[1]:
-        st.markdown("##### :medical_symbol: How are the metrics calculated")
+        st.markdown("##### ⚕️ How are the metrics calculated")
 
         link = "- :star: [Glycemic Variability Measures]"
         link += "(https://shiny.biostat.umn.edu/GV/README2.pdf)"
@@ -356,7 +356,7 @@ if select == options[1]:
         st.markdown(link)
 
     with tabs[2]:
-        st.markdown("##### :medical_symbol: What is normal?")
+        st.markdown("##### ⚕️ What is normal?")
 
         link = "- [Normal Reference Range for Mean Tissue Glucoseand Glycemic Variability Derived from Continuous "
         link += "Glucose Monitoring for Subjects Without Diabetes in Different Ethnic Groups]"
@@ -388,7 +388,7 @@ if select == options[1]:
 
         st.markdown(link)
     with tabs[3]:
-        st.markdown("##### :medical_symbol: Challenges")
+        st.markdown("##### ⚕️ Challenges")
 
         link = "- [The Challenges of Measuring Glycemic Variability]"
         link += "(https://journals.sagepub.com/doi/abs/10.1177/193229681200600328)"
