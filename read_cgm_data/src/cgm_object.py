@@ -1362,7 +1362,7 @@ class CGM(object):
         """
         points = glycemic_risk_index(self.data,**self.params)
         zones = np.array([0,20,40,60,80,100])
-        zones_=['A','B','C','D','E']
+        zones_=['A','B','C','D','E','E']
         
         pt0 = points[0]
         idx = np.where(pt0>=zones)[0][-1]
