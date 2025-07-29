@@ -490,6 +490,8 @@ def glycemic_risk_index(x,**kwargs):
 def cogi(x,**kwargs):
     tir = time_in_range(x,**kwargs)
     sd = glucose_std(x,**kwargs)
+    if kwargs['units']=='mmol':
+        sd = sd*18.018
     f1 = lambda x1: 0.5*x1
     f2 = lambda x2:0.35*((-100/15*x2+100)*(0<=x2<15))
     f3 = lambda x3:0.15*(100*(x3<18)+(-10/9*(x3-18)+100)*(18<=x3<108))
