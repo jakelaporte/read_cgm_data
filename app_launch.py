@@ -3,7 +3,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import read_cgm_data as rd
-
+##
 pages_master = {0:[":house: Home","app_launch.py"],
               1:[":information_source: Data Structure","pages/1_read_data.py"],
               2:[":file_cabinet: Import_Data","pages/2_import_data.py"],
@@ -442,6 +442,7 @@ if select == options[1]:
         standardize GV measurement and thereby streamline the assessment of its two most 
         important components—amplitude and timing."""
         st.markdown(link)
+
 
 
 
