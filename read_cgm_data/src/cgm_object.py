@@ -1184,7 +1184,7 @@ class CGM(object):
         ax3 = plt.subplot2grid(fs,(0,6),rowspan=4,colspan=2)
         kwargs = {'stats':['Coefficient\nof Variation',"Std Dev\nmg/dL"],
                   'vals':self.stats.T[scols].values[0]*[100,1],
-                  'normal':['<36','<6'],
+                  'normal':['<36','10-26'],
                   'cols':[0.25,0.7],
                   'rows':[0.75,0.55,0.3],
                   'vlines':[0.4,0.6],
@@ -1637,5 +1637,6 @@ class CGM(object):
         
         return df
     
+
 
 
