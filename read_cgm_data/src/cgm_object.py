@@ -61,6 +61,8 @@ class CGM(object):
         self.max_break = max_break
         self.date_format = dt_fmt
         self.df = file_df.dropna()
+        ## get rid of the local timezone
+        self.df.index = self.df.index.tz_localize(None)
         self.missing_values = None
         self.observations = len(self.df)
 
@@ -1635,4 +1637,5 @@ class CGM(object):
         
         return df
     
+
 
